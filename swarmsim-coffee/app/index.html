@@ -9,7 +9,7 @@ https://github.com/swarmsim/swarm
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Language" content="en-US" />
-    <title>Swarm Simulator</title>
+    <title>Schwarmsimulator</title>
     <link rel="shortcut icon" type="image/png" href="favicon.ico">
     <meta name="description" content="An incremental game. Starting with just a few larvae and a small pile of meat, grow a massive swarm of giant bugs.">
     <link rel="canonical" href="https://www.swarmsim.com">
@@ -120,7 +120,7 @@ https://github.com/swarmsim/swarm
       <div ng-cloak ng-controller="WelcomeBackCtrl">
         <div id="welcomeback" class="alert alert-info alert-dismissible animif" role="alert" ng-if="showWelcomeBack">
           <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-          <p title="Please don't go. The drones need you. They look up to you.">Welcome back! While you were away for {{durationSinceClosed.humanize()}}, your swarm produced:</p>
+          <p title="Bitte geh nicht.  Die Drohnen brauchen dich.  Sie schauen zu dir auf.">Willkommen zurück!  Während du weg warst {{durationSinceClosed.humanize()}}, hat dein Schwarm erfolgreich produziert:</p>
           <!--span ng-repeat="gain in offlineGains">
             <span ng-if="!$first && $last"> and </span>
               {{gain.val | longnum}}
@@ -139,20 +139,20 @@ https://github.com/swarmsim/swarm
           <div ng-if="options.aprilFoolsState() === 'on'">
             <span title="Really. Honest. Would I lie to you?" class="small pull-right">{{year}}/04/01</span>
             <div ng-if="!options.isAprilFoolsTheme()">
-              <p><strong title="Really. Honest. Would I lie to you?">Exciting changes are coming to Swarm Simulator soon!</strong></p>
-              <p>Insects are too icky, so we're changing our name. Also, we'll require graphics to play.</p>
+              <p><strong title="Wirklich. Ehrlich. Würde ich dich anlügen?">Dem Swarm Simulator stehen bald aufregende Änderungen bevor!</strong></p>
+               <p>Insekten sind zu eklig, deshalb ändern wir unseren Namen.  Außerdem benötigen wir zum Spielen Grafiken</p>
               <p><a href="javascript:" ng-click="options.isAprilFoolsTheme(true)">Try out the upcoming changes now!</a></p>
             </div>
             <div ng-if="options.isAprilFoolsTheme()">
-              <p><strong title="Really. Honest. Would I lie to you?">Swarm Simulator is now Kitten Klicker!</strong></p>
-              <p>Insects were too icky, so we've changed our name. Also, we now require graphics to play. Thanks to <a target="_blank" href="http://placekitten.com/attribution.html">Placekitten</a> for providing graphics. Enjoy the new game!</p>
-              <p><a href="javascript:" ng-click="options.isAprilFoolsTheme(false)">Click here if you hate kittens, you monster.</a></p>
+              <p><strong title="Wirklich. Ehrlich. Würde ich dich anlügen?">Swarm Simulator ist jetzt Kitten Klicker!</strong></p>
+               <p>Insekten waren zu eklig, deshalb haben wir unseren Namen geändert.  Außerdem benötigen wir jetzt Grafiken zum Spielen.  Dank an <a target="_blank" href="http://placekitten.com/attribution.html">Placekitten</a> für die Bereitstellung von Grafiken.  Viel Spaß mit dem neuen Spiel!</p>
+              <p><a href="javascript:" ng-click="options.isAprilFoolsTheme(false)">Klicke hier, wenn du Kätzchen hasst, du Monster.</a></p>
             </div>
           </div>
           <div ng-if="options.aprilFoolsState() === 'after'">
             <span class="small pull-right">{{year}}/04/02</span>
-            <p>I hope you enjoyed yesterday's April Fools joke!</p>
-            <p><a href="#/cleartheme?themeExtra=@import%20url%28'/static/kittens.css'%29;">Click here to keep the kitten pictures.</a> To remove them later, go to the options screen and click "Clear all extra styling/graphics".</p>
+            <p>Ich hoffe, Ihnen hat der Aprilscherz von gestern gefallen</p>
+            <p><a href="#/cleartheme?themeExtra=@import%20url%28'/static/kittens.css'%29;">Klicken Sie hier, um die Kätzchenbilder zu behalten.</a> Um sie später zu entfernen, gehen Sie zum Optionsbildschirm und klicken Sie auf „Alle zusätzlichen Stile/Grafiken löschen“.</p>
           </div>
         </div>
       </div>
