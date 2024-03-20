@@ -22,10 +22,10 @@
     </a>
     <ul class="dropdown-menu" dropdown-menu-auto-direction role="menu">
       <li role="presentation" ng-class="{disabled:game.availableAutobuyUpgrades() <= 0}"><a role="menuitem" tabindex="-1" href="javascript:" ng-click="buyAllUpgrades()">
-        <span class="glyphicon glyphicon-circle-arrow-up"></span> Buy all {{game.availableAutobuyUpgrades().length | number}} upgrade<span ng-if="game.availableAutobuyUpgrades().length !== 1">s</span>
+        <span class="glyphicon glyphicon-circle-arrow-up"></span> Kaufe alle {{game.availableAutobuyUpgrades().length | number}} upgrade<span ng-if="game.availableAutobuyUpgrades().length !== 1">s</span>
       </a></li>
       <li role="presentation" ng-class="{disabled:game.availableAutobuyUpgrades(0.25) <= 0}"><a role="menuitem" tabindex="-1" href="javascript:" ng-click="buyCheapestUpgrades()">
-        <span class="glyphicon glyphicon-upload"></span> Buy cheapest {{game.availableAutobuyUpgrades(0.25).length | number}} upgrade<span ng-if="game.availableAutobuyUpgrades(0.25).length !== 1">s</span>
+        <span class="glyphicon glyphicon-upload"></span> Kaufe Günstig  {{game.availableAutobuyUpgrades(0.25).length | number}} upgrade<span ng-if="game.availableAutobuyUpgrades(0.25).length !== 1">s</span>
       </a></li>
       <li role="presentation" class="divider"></li>
       <li ng-class="{disabled:!isUndoable()}" role="presentation">
@@ -36,28 +36,28 @@
         </a>
       </li>
       <li role="presentation"><a role="menuitem" tabindex="-1" href="#/options">
-        <span class="glyphicon glyphicon-cog"></span> Options
+        <span class="glyphicon glyphicon-cog"></span> Optionen
       </a></li>
       <li role="presentation"><a role="menuitem" tabindex="-1" href="#/achievements">
-        <span class="glyphicon glyphicon-ok"></span> Achievements
+        <span class="glyphicon glyphicon-ok"></span> Erfolge
       </a></li>
       <li role="presentation"><a role="menuitem" tabindex="-1" href="#/statistics">
-        <span class="glyphicon glyphicon-stats"></span> Statistics
+        <span class="glyphicon glyphicon-stats"></span> Statistiken
       </a></li>
       <li role="presentation"><a role="menuitem" tabindex="-1" href="#/changelog">
-        <span class="glyphicon glyphicon-book"></span> Patch Notes
+        <span class="glyphicon glyphicon-book"></span> Patch verlauf
       </a></li>
       <!--li role="presentation"><a role="menuitem" tabindex="-1" href="#/news-archive">
         <span class="glyphicon glyphicon-bullhorn"></span> News
       </a></li-->
       <li role="presentation"><a role="menuitem" tabindex="-1" href="#/contact">
-        <span class="fa fa-comment"></span> Send Feedback
+        <span class="fa fa-comment"></span> Feedback abschicken
       </a></li>
       <li role="presentation"><a role="menuitem" tabindex="-1" href="#/contact?error">
-        <span class="fa fa-bug"></span> Report Problem
+        <span class="fa fa-bug"></span> Problem melden
       </a></li>
       <li role="presentation"><a role="menuitem" tabindex="-1" href="#/tab/all">
-        <span class="glyphicon glyphicon-list-alt"></span> Show all units
+        <span class="glyphicon glyphicon-list-alt"></span> Alle Einheiten anzeigen
       </a></li>
     </ul>
   </li>
