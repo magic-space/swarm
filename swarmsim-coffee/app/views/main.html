@@ -8,7 +8,7 @@
   <div class="tab-pane active table-responsive" style="padding-bottom: 250px">
     <table class="table unit-table table-hover" style="width:auto; float:left">
       <!-- filthy hack to show achievements on larvae page -->
-      <tr ng-if="cur.tab.name == 'larva' && game.upgrade('achievementbonus').count().greaterThan(0)">
+      <tr ng-if="cur.tab.name == 'Larve' && game.upgrade('achievementbonus').count().greaterThan(0)">
         <td class="upgrade-indicator"></td>
         <td class="titlecase">
           <a href="#/achievements">
@@ -36,7 +36,7 @@
           <span ng-if="!unit.velocity().isZero()">
           +{{unit.velocity().times(options.getVelocityUnit({unit:unit}).mult)|bignum:2}}/{{options.getVelocityUnit({unit:unit}).name}}
           </span>
-          <span ng-if="unit.velocity().isZero() && cur.tab.name == 'territory' && !val.isZero()" ng-repeat="(name, val) in unit.totalProduction()">
+          <span ng-if="unit.velocity().isZero() && cur.tab.name == 'Gebiet' && !val.isZero()" ng-repeat="(name, val) in unit.totalProduction()">
             +{{val.times(options.getVelocityUnit({unit:name}).mult)|bignum:2}}/{{options.getVelocityUnit({unit:name}).name}}</span>
         </td>
         <td ng-if="options.showAdvancedUnitData()">
