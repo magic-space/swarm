@@ -1,16 +1,16 @@
 <tabs></tabs>
 
 <div class="container statistics">
-  <h1>Statistics</h1>
+  <h1>Statistiken</h1>
   <div ng-repeat="unit in game.unitlist()">{{unit.label}}</div>
   <div class="table-responsive" ng-init="unitlist = (game.unitlist() | filter:showStats)">
     <table class="table" ng-if="unitlist.length > 0">
       <tr>
-        <th>unit</th>
-        <th>first bought</th>
-        <th>clicks</th>
-        <th>bought manually</th>
-        <th>twins</th>
+        <th>Einheit</th>
+        <th>Erster Kauf</th>
+        <th>Klicks</th>
+        <th>manuell gekauft</th>
+        <th>Zwillinge</th>
       </tr>
       <tbody>
         <tr ng-repeat="unit in unitlist" ng-init="ustats = unitStats(unit)">
@@ -23,16 +23,16 @@
       </tbody>
     </table>
     <div ng-if="unitlist.length == 0">
-      No units purchased.
+      Keine Einheiten gekauft.
     </div>
   </div>
   <div class="table-responsive" ng-init="upgradelist = (game.upgradelist() | filter:hasUpgradeStats)">
     <table class="table" ng-if="upgradelist.length > 0">
       <tr>
-        <th>upgrade</th>
-        <th>first bought</th>
-        <th>clicks</th>
-        <th>total bought</th>
+        <th>Aktualisierungen</th>
+        <th>Erster Kauf</th>
+        <th>Klicks</th>
+        <th>insgesamt gekauft</th>
       </tr>
       <tbody>
         <tr ng-repeat="upgrade in upgradelist" ng-init="ustats = upgradeStats(upgrade)">
@@ -44,7 +44,7 @@
       </tbody>
     </table>
     <div ng-if="upgradelist.length == 0">
-      No upgrades purchased.
+      Keine Aktualisierungen gekauft.
     </div>
   </div>
   <dl class="dl-horizontal">
@@ -53,7 +53,7 @@
     <dt>start date</dt>
     <dd>{{game.momentStarted().fromNow()}} - {{game.dateStarted().toString()}}</dd>
     <dt>last ascended</dt>
-    <dd ng-if="game.unit('ascension').count().isZero()">never</dd>
+    <dd ng-if="game.unit('ascension').count().isZero()">Niemals</dd>
     <dd ng-if="!game.unit('ascension').count().isZero()">{{game.session.state.date.restarted|momentFromNow}} - {{game.session.state.date.restarted.toString()}}</dd>
   </dl>
 </div>
